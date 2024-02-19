@@ -1,1 +1,15 @@
- 
+government = tribal
+add_government_reform = barbarian_reform
+primary_culture = pommeranian
+religion = germanic
+technology_group = barbarian
+capital = 4745
+
+395.1.1 {
+    monarch = "Wodan"
+    dynasty = "Aesir"
+    adm = 12
+    mil = 12
+    dip = 12
+    add_ruler_personality = immortal_personality
+}
