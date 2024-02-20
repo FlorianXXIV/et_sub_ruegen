@@ -1,0 +1,59 @@
+WCL_ideas = {
+    free = yes
+
+    trigger = {
+
+    }
+
+    start = {
+        global_institution_spread = 0.5
+        shock_damage = 0.1
+        land_morale = 0.25
+    }
+
+    bonus = {
+        army_tradition = 1
+        drill_decay_modifier = -0.5
+    }
+
+    WCL_ideas_longships = {
+		landing_penalty = -1
+		sea_repair = yes
+		light_ship_power = 0.2
+		global_ship_trade_power = 0.25
+		may_explore = yes
+	}
+	WCL_ideas_walhalla_spirit = {
+		land_morale = 0.20
+		naval_morale = 0.15
+		morale_damage_received = -0.05
+	}
+	WCL_ideas_a_poet_god = {
+		embracement_cost = -0.2
+		free_policy = 2
+		innovativeness_gain = 0.1
+		technology_cost = -0.15
+	}
+	WCL_ideas_working_spirit = {
+		development_cost = -0.1
+		local_production_efficiency = 0.25
+	}
+	WCL_ideas_gaensemarsch = {
+		discipline = 0.5
+		fire_damage = 0.1
+        reinforce_speed = 0.2
+        movement_speed = 0.1
+	}
+	WCL_ideas_die_republik = {
+		republican_tradition = 1
+		candidate_random_bonus = 3
+		advisor_cost = -0.5
+		female_advisor_chance = 0.5
+	}
+	WCL_ideas_market_of_ideas = {
+		global_trade_power = 0.5
+		merchants = 2
+		trade_range_modifier = 0.5
+		placed_merchant_power_modifier = 0.25
+	}
+}

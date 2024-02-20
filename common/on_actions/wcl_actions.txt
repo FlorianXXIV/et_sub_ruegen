@@ -1,0 +1,5 @@
+on_startup =  {
+    events = {
+        wcl_flavor.1 #Wodan unveils himself
+    }
+}

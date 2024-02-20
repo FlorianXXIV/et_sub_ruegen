@@ -1,0 +1,29 @@
+wodan_units = {
+    country_trigger = {
+        OR = {
+            tag = WCL
+        }
+    }
+
+    sprite_infantry = {
+        0 = NOV_INFANTRY_1
+		1 = SWE_INFANTRY_2_evup
+        2 = GER_INFANTRY_3
+        3 = GER_INFANTRY_4
+    }
+
+    sprite_cavalry = {
+        0 = NOV_CAVALRY_1
+		1 = SWE_CAVALRY_2_evup
+        2 = GER_CAVALRY_3
+        3 = GER_CAVALRY_4
+    }
+
+    sprite_artillery = {
+        0 = NOV_ARTILLERY_1
+		1 = SWE_ARTILLERY_2_evup
+        2 = GER_ARTILLERY_3
+        3 = GER_ARTILLERY_4
+    }
+
+}

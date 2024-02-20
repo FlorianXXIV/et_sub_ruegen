@@ -1,0 +1,15 @@
+﻿l_english:
+ # Events
+ wcl_flavor.1.t:0 "A God Reveals himself"
+ wcl_flavor.1.d:0 "Today our council was greeted with a shocking revelation \n Our leader revealed himself to be none other than the Allfather Wodan, he has announced Rügen to be the founding place for his council."
+ wcl_flavor.1.o1:0 "A great Day! Cheers to the Allfather"
+ # Ideas
+ WCL_ideas:0 "Wodans ideas"
+ WCL_ideas_start:0 "Germanic Traditions"
+ WCL_ideas_longships:0 "Njords Longships"
+ WCL_ideas_walhalla_spirit:0 "Die for Walhalla"
+ WCL_ideas_a_poet_god:0 "A Poet God"
+ WCL_ideas_working_spirit:0 "Arbeitergeist"
+ WCL_ideas_gaensemarsch:0 "Gänsemarsch"
+ WCL_ideas_die_republik:0 "Deutsche Republik"
+ WCL_ideas_market_of_ideas:0 "Marketplace of Ideas"
