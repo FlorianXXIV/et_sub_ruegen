@@ -35,3 +35,6 @@
  # Event Modifiers
  allfather_guidance:0 "Guidance of the Allfather"
  allfather_guidance_desc:0 "While not our Direct ruler anymore, Wodan still guides us with his wisdom."
+ # Government Reform
+ althing_reform:0 "Germanic Althing"
+ althing_reform_desc:0 "Many Clans have Abandoned the Althing, as strongmen took over. Wodan was angered by this and now has reinstated this old tradition within our nation"

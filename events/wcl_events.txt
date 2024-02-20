@@ -14,10 +14,6 @@ country_event = {
 	}
 
     trigger = {
-        OR = {
-            tag = RGL
-            tag = RUG
-        }
         owns = 4745
         is_year = 395
     }

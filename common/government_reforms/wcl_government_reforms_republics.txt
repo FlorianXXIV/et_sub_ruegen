@@ -1,0 +1,43 @@
+althing_reform = {
+    icon = "articles_of_agreement"
+    allow_normal_conversion = no
+    potential = {
+        OR = {
+            tag = WCl
+            religion = germanic
+        }
+    }
+    lock_level_when_selected = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+    republican_name = yes
+    conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
+	}
+
+	modifiers = {
+        governing_capacity = 100
+        candidate_random_bonus = 3
+        can_revoke_parliament_seats = yes
+        global_unrest = -2
+        diplomatic_reputation = 1
+        global_autonomy = 0.05
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	duration = 5
+}

@@ -5,6 +5,7 @@ country_decisions = {
         potential = {
             tag = WCL
             adm_tech = 15
+            NOT = { has_country_flag = wcl_reformed_althing }
         }
 
         allow = {
@@ -15,12 +16,14 @@ country_decisions = {
         }
 
         effect = {
-            add_government_reform = federal_republic
+            change_government = republic
+            add_government_reform = althing_reform
             add_country_modifier = {
-                name = allfather_guidance
+                name = "allfather_guidance"
                 duration = -1
                 desc = allfather_guidance_desc
             }
+            set_country_flag = wcl_reformed_althing
         }
     }
 
@@ -29,33 +32,38 @@ country_decisions = {
 
         potential = {
             tag = WCL
-            adm_tech = 20
+            adm_tech = 19
+            NOT = { has_country_flag = wcl_formed_germanic_union }
         }
 
         allow = {
             stability = 2
             owns_core_province = 4743
-            num_of_provinces_in_states = {
-                value = 50
-                OR = {
-                    region = south_germany_region
-                    region = north_germany_region
+            num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					region = north_german_region
+					region = south_german_region
                     culture_group = germanic
-                }
-            }
-            adm_tech = 25
+				}
+				value = 50
+			}
+            adm_tech = 24
             adm_power = 300
         }
 
         effect = {
+            set_country_flag = wcl_formed_germanic_union
             if = {
                 limit = {
                     NOT = { government = republic }
                 }
-                add_government_reform = federal_republic
+                change_government = republic
+                add_government_reform = althing_reform
             }
             set_government_rank = 3
             override_country_name = GERMANIC_UNION
+            change_country_color = { 64 64 40 }
         }
     }
 }
