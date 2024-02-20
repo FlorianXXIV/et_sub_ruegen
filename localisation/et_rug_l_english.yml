@@ -1,8 +1,22 @@
 ﻿l_english:
  # Events
+ ## Wodan Reveals himself
  wcl_flavor.1.t:0 "A God Reveals himself"
- wcl_flavor.1.d:0 "Today our council was greeted with a shocking revelation \n Our leader revealed himself to be none other than the Allfather Wodan, he has announced Rügen to be the founding place for his council."
+ wcl_flavor.1.d:0 "Today we were met with worrisome news \n It is said that a Wanderer from Rügen has revealed himself to be the Germanic god Wodan, the Allfather himself! Many local Clans have rallied to his side and siezed controll over the Province. \n How will we respond to these news?"
  wcl_flavor.1.o1:0 "A great Day! Cheers to the Allfather"
+ wcl_flavor.1.o2:0 "The Allfather be blessed! Let him govern the Province."
+ wcl_flavor.1.o3:0 "Nonsense! Wodan is no god! Destroy the rebels."
+ ## Reaction to Wodan of Previous owner of Rügen
+ wcl_flavor.2.t:0 "Wodans Council Breaks of!"
+ wcl_flavor.2.d:0 "My Lord! After declaring himself to be the Allfather Wodan has taken controll of Rügen and raised an army! \n How should we react to this unfortunate event?"
+ wcl_flavor.2.o1:0 "Preposterous! We go to War!"
+ wcl_flavor.2.o2:0 "We are Powerless against a God. Stand down."
+ ## Wodans Council recieves the news
+ wcl_flavor.3.t:0 "Response to our Independence"
+ wcl_flavor.3.d1:0 "Mighty Allfather! [From.GetName] have declared war against us! It seems they did not take too kindly to our bid for Independence."
+ wcl_flavor.3.d2:0 "Mighty Allfather! Our Independence was a resounding success, [From.GetName] tucked in their Tail and left us to our own devices."
+ wcl_flavor.3.o1:0 "They will not Stand against us. Ready the Troops!"
+ wcl_flavor.3.o2:0 "Hah! These cowards never had a chance."
  # Ideas
  WCL_ideas:0 "Wodans ideas"
  WCL_ideas_start:0 "Germanic Traditions"
@@ -13,3 +27,11 @@
  WCL_ideas_gaensemarsch:0 "Gänsemarsch"
  WCL_ideas_die_republik:0 "Deutsche Republik"
  WCL_ideas_market_of_ideas:0 "Marketplace of Ideas"
+ # Decisions
+ wcl_become_republic_title:0 "Reform the Althing"
+ wcl_become_republic_desc:0 "Time has come to let the Althing rule over our nation, the Allfather wishes it, though he will keep a watchful eye on our growing realm."
+ wcl_form_germanic_union_title:0 "Form the Germanic union"
+ wcl_form_germanic_union_desc:0 "We have done it! We united enough Clans under our Rule to call ourselves the Germanic union. The Allfather is proud of us."
+ # Event Modifiers
+ allfather_guidance:0 "Guidance of the Allfather"
+ allfather_guidance_desc:0 "While not our Direct ruler anymore, Wodan still guides us with his wisdom."

@@ -1,21 +1,301 @@
 namespace = wcl_flavor
 
 country_event = {
-    id = wcl_flavor.1
+    id = wcl_flavor.1      # Wodan reveals himself
     title = wcl_flavor.1.t
     desc = wcl_flavor.1.d
     picture = GOOD_WITH_MONARCH_eventPicture
 
     fire_only_once = yes
-    is_triggered_only = yes
+
+    major = yes
+	major_trigger = {
+		has_matching_religion = germanic
+	}
 
     trigger = {
-        tag = WCL
+        OR = {
+            tag = RGL
+            tag = RUG
+        }
+        owns = 4745
+        is_year = 395
     }
 
     option = {
         name = wcl_flavor.1.o1
-        add_ruler_personality = immortal_personality
-        swap_free_idea_group = yes
+        highlight = yes
+        4745 = {
+            change_culture = pommeranian
+            change_religion = germanic
+            add_core = WCL
+        }
+        release = WCL
+        WCL = {
+            hidden_effect = {
+                add_government_reform = barbarian_reform
+                4745 = {
+                    infantry = WCL
+                    infantry = WCL
+                    infantry = WCL
+                    infantry = WCL
+                    cavalry = WCL
+                    cavalry = WCL
+                    cavalry = WCL
+                    galley = WCL
+                    galley = WCL
+                    galley = WCL
+                    galley = WCL
+                    light_ship = WCL
+                    light_ship = WCL
+                }
+                define_general = {
+                    shock = 12
+                    fire = 12
+                    manuever = 12
+                    siege = 12
+                }
+                define_admiral = {
+                    shock = 12
+                    fire = 12
+                    manuever = 12
+                    siege = 12
+                }
+            }
+            define_ruler = {
+                name = "Wodan"
+                dynasty = "Aesir"
+                religion = germanic
+                culture = pommeranian
+                adm = 12
+                dip = 12
+                mil = 12
+                age = 20
+                claim = 95
+            }
+            add_ruler_personality = immortal_personality
+            swap_free_idea_group = yes
+        }
+        hidden_effect = {
+            country_event = {
+                id = wcl_flavor.2
+                days = 30
+			}
+        }
+        switch_tag = WCL
+        ai_chance = {
+            factor = 0
+        }
     }
+
+    option = {
+        name = wcl_flavor.1.o2
+        4745 = {
+            change_culture = pommeranian
+            change_religion = germanic
+            add_core = WCL
+        }
+        release = WCL
+        WCL = {
+            hidden_effect = {
+                add_government_reform = barbarian_reform
+                4745 = {
+                    infantry = WCL
+                    infantry = WCL
+                    infantry = WCL
+                    infantry = WCL
+                    cavalry = WCL
+                    cavalry = WCL
+                    cavalry = WCL
+                    galley = WCL
+                    galley = WCL
+                    galley = WCL
+                    galley = WCL
+                    light_ship = WCL
+                    light_ship = WCL
+                }
+                define_general = {
+                    shock = 12
+                    fire = 12
+                    manuever = 12
+                    siege = 12
+                }
+                define_admiral = {
+                    shock = 12
+                    fire = 12
+                    manuever = 12
+                    siege = 12
+                }
+            }
+            define_ruler = {
+                name = "Wodan"
+                dynasty = "Aesir"
+                religion = germanic
+                culture = pommeranian
+                adm = 12
+                dip = 12
+                mil = 12
+                age = 20
+                claim = 95
+            }
+            add_ruler_personality = immortal_personality
+            swap_free_idea_group = yes
+        }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0
+                NOT = { has_matching_religion = germanic }
+            }
+        }
+    }
+
+    option = {
+        name = wcl_flavor.1.o3
+        4745 = {
+            change_culture = pommeranian
+            change_religion = germanic
+            add_core = WCL
+        }
+        release = WCL
+        WCL = {
+            hidden_effect = {
+                add_government_reform = barbarian_reform
+                4745 = {
+                    infantry = WCL
+                    infantry = WCL
+                    infantry = WCL
+                    infantry = WCL
+                    cavalry = WCL
+                    cavalry = WCL
+                    cavalry = WCL
+                    galley = WCL
+                    galley = WCL
+                    galley = WCL
+                    galley = WCL
+                    light_ship = WCL
+                    light_ship = WCL
+                }
+                define_general = {
+                    shock = 12
+                    fire = 12
+                    manuever = 12
+                    siege = 12
+                }
+                define_admiral = {
+                    shock = 12
+                    fire = 12
+                    manuever = 12
+                    siege = 12
+                }
+            }
+            define_ruler = {
+                name = "Wodan"
+                dynasty = "Aesir"
+                religion = germanic
+                culture = pommeranian
+                adm = 12
+                dip = 12
+                mil = 12
+                age = 20
+                claim = 95
+            }
+            add_ruler_personality = immortal_personality
+            swap_free_idea_group = yes
+        }
+        declare_war_with_cb = {
+            who = WCL
+            casus_belli = cb_annex
+        }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 100
+                NOT = { has_matching_religion = germanic }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = wcl_flavor.2
+    title = wcl_flavor.2.t
+    desc = wcl_flavor.2.d
+    picture = BAD_WITH_MONARCH_eventPicture
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+		name = wcl_flavor.2.o1
+        declare_war_with_cb = {
+            who = WCL
+            casus_belli = cb_annex
+        }
+        ai_chance = {
+            factor = 25
+            modifier = {
+                factor = 75
+                NOT = { has_matching_religion = germanic }
+            }
+        }
+	}
+
+	option = {
+		name = wcl_flavor.2.o2
+        ai_chance = {
+            factor = 75
+            modifier = {
+                factor = 25
+                NOT = { has_matching_religion = germanic }
+            }
+        }
+	}
+	after = {
+        WCL = {
+            country_event = {
+                id = wcl_flavor.3
+                days = 1
+            }
+        }
+	}
+}
+
+country_event = {
+    id = wcl_flavor.3
+    title = wcl_flavor.3.t
+    desc = {
+        trigger = {
+            is_at_war = yes
+            FROM = {
+                is_at_war = yes
+            }
+        }
+        desc = wcl_flavor.3.d1
+    }
+    desc = {
+        trigger = { is_at_war = no }
+        desc = wcl_flavor.3.d2
+    }
+    is_triggered_only = yes
+    trigger = {
+        tag = WCL
+    }
+    option = {
+        name = wcl_flavor.3.o1
+        trigger = {
+            is_at_war = yes
+            FROM = {
+                is_at_war = yes
+            }
+        }
+    }
+
+    option = {
+        name = wcl_flavor.3.o2
+        trigger = {
+            is_at_war = no
+        }
+    }
+
 }

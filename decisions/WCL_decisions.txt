@@ -1,0 +1,61 @@
+country_decisions = {
+    wcl_become_republic {
+        major = yes
+
+        potential = {
+            tag = WCL
+            adm_tech = 15
+        }
+
+        allow = {
+            stability = 2
+            owns_core_province = 4743
+            adm_tech = 19
+            adm_power = 300
+        }
+
+        effect = {
+            add_government_reform = federal_republic
+            add_country_modifier = {
+                name = allfather_guidance
+                duration = -1
+                desc = allfather_guidance_desc
+            }
+        }
+    }
+
+    wcl_form_germanic_union {
+        major = yes
+
+        potential = {
+            tag = WCL
+            adm_tech = 20
+        }
+
+        allow = {
+            stability = 2
+            owns_core_province = 4743
+            num_of_provinces_in_states = {
+                value = 50
+                OR = {
+                    region = south_germany_region
+                    region = north_germany_region
+                    culture_group = germanic
+                }
+            }
+            adm_tech = 25
+            adm_power = 300
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    NOT = { government = republic }
+                }
+                add_government_reform = federal_republic
+            }
+            set_government_rank = 3
+            override_country_name = GERMANIC_UNION
+        }
+    }
+}

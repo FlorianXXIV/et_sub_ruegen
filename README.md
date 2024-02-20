@@ -5,4 +5,7 @@ I will focus on one nation at one start date in the Extendet timeline mod. I wil
 
 Though there is a slim chance that this will go somewhere
 
+This mod is NOT compatible with any UI mods since they cause crashes with the Ages Screen.
+If you do want to play with UI mods you can remove the dependency part of the descriptor.mod file, this should work with versions 0.2.0 and below.
+
 if you want to use aspects of this mod you are free to do so.

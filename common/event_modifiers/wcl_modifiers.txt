@@ -1,0 +1,7 @@
+allfather_guidance = {
+    picture = "legitimacy"
+    republican_tradition = 0.3
+    all_power_cost = -0.2
+    free_policy = 1
+    prestige = 0.75
+}
