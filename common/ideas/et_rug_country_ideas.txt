@@ -2,7 +2,7 @@ WCL_ideas = {
     free = yes
 
     trigger = {
-
+		tag = WCL
     }
 
     start = {
