@@ -5,6 +5,7 @@ tags={
 	"New Nations"
 }
 name="Extended timeline Rügen Rising Submod"
+picture=".WCL.tga"
 supported_version="1.36.2"
 dependencies={
         "Extended Timeline"
