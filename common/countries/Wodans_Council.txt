@@ -75,10 +75,10 @@ ship_names = {
 }
 
 army_names {
-	"$PROVINCE$sche Garde"
+	"$PROVINCE$er Garde"
 }
 
 fleet_names {
 	"Njords Streiter"
-	"$PROVINCE$sche Marine"
+	"$PROVINCE$er Marine"
 }

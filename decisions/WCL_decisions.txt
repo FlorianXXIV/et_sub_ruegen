@@ -41,7 +41,7 @@ country_decisions = {
             owns_core_province = 4743
             owns_core_province = 50
             num_of_owned_provinces_with = {
-				is_core = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
 				OR = {
 					region = north_german_region
 					region = south_german_region
@@ -64,7 +64,9 @@ country_decisions = {
             }
             set_government_rank = 3
             override_country_name = GERMANIC_UNION
-            change_country_color = { 64 64 40 }
+            hidden_effect = {
+                change_country_color = { 64 64 40 }
+            }
         }
     }
 }
