@@ -7,6 +7,7 @@ country_event = {
     picture = GOOD_WITH_MONARCH_eventPicture
 
     fire_only_once = yes
+    is_triggered_only = no
 
     major = yes
 	major_trigger = {
@@ -15,8 +16,15 @@ country_event = {
 
     trigger = {
         owns = 4745
-        is_year = 395
+        and = {
+            is_year = 395
+            NOT = {
+                is_year = 500
+            }
+        }
     }
+
+    mean_time_to_happen = { days = 0 }
 
     option = {
         name = wcl_flavor.1.o1
@@ -260,6 +268,19 @@ country_event = {
 country_event = {
     id = wcl_flavor.3
     title = wcl_flavor.3.t
+    picture = {
+        trigger = {
+            is_at_war = yes
+            FROM = {
+                is_at_war = yes
+            }
+        }
+        picture = BATTLE_eventPicture
+    }
+    picture = {
+        trigger = { is_at_war = no }
+        picture = DIPLOMACY_SIGNING_eventPicture
+    }
     desc = {
         trigger = {
             is_at_war = yes

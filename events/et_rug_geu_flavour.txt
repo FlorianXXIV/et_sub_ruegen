@@ -1,0 +1,14 @@
+namespace = geu_flavour
+
+country_event = {
+    id = geu_flavour.1
+    title = geu_flavour.1.t
+    desc = geu_flavour.1.d
+    picture = REFORM_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = geu_flavour.1.o
+    }
+}

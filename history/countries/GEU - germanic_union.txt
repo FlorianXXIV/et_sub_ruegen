@@ -1,0 +1,6 @@
+government = republic
+add_government_reform = althing_reform
+primary_culture = saxon
+religion = germanic
+technology_group = barbarian
+capital = 4743

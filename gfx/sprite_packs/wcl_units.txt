@@ -2,6 +2,7 @@ wodan_units = {
     country_trigger = {
         OR = {
             tag = WCL
+            tag = GEU
         }
     }
 

@@ -6,7 +6,7 @@ tags={
 	"National Ideas"
 }
 picture="WCL.jpg"
-version="0.2.2"
+version="0.3.0"
 supported_version="1.36.*"
 DEPENDENCIES={
         "Extended Timeline"
